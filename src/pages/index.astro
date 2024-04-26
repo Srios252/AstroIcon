@@ -1,0 +1,94 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro Icon</title>
+		<style>
+#wrapper{
+	max-width:1200px;
+	margin:auto;
+}
+h1{
+	text-align: center;
+}
+.icon-container{
+	background-color: none;
+	display:flex;
+	flex-direction:row;
+	justify-content: space-between;
+	align-items:top;
+	line-height:1.7rem;
+	gap:2rem;
+}
+		</style>
+	</head>
+	<body>
+<div id="wrapper">
+			<h1>Astro Icon</h1>
+			<hr/>
+	<div class="icon-container">
+				<a href="https://docs.google.com/presentation/d/1jkDYgNl2smLmtJlxyq-k74cL_CVYXynRRdb0EYritls/edit?usp=sharing">
+					<Icon name="resume" width={100} height={100}/>
+				</a>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum explicabo quisquam quis non, cupiditate possimus! Quaerat corporis voluptatem ipsam, qui, dicta libero, ut aspernatur assumenda vero accusamus nesciunt deserunt omnis.</p>
+	
+				<a href="https://chsserver01.org/2023/srios062023/Semester2/ThemeBuild/index.html">
+					<Icon name="design" width={100} height={100}/> 
+				</a>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum explicabo quisquam quis non, cupiditate possimus! Quaerat corporis voluptatem ipsam, qui, dicta libero, ut aspernatur assumenda vero accusamus nesciunt deserunt omnis.</p>
+	
+				<a href="https://chsserver01.org/2023/srios062023/">
+					<Icon name="programming" width={100} height={100}/>
+				</a>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum explicabo quisquam quis non, cupiditate possimus! Quaerat corporis voluptatem ipsam, qui, dicta libero, ut aspernatur assumenda vero accusamus nesciunt deserunt omnis.</p>
+	
+				<a href="https://docs.google.com/presentation/d/141xn_igeZrEHhgCTEBhI_UUMOcSk_KodCoC3DRUBbSI/edit?usp=sharing">
+					<Icon name="career" size={100}/>
+				</a>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum explicabo quisquam quis non, cupiditate possimus! Quaerat corporis voluptatem ipsam, qui, dicta libero, ut aspernatur assumenda vero accusamus nesciunt deserunt omnis.</p>
+	
+				<a href="https://www.google.com/search?q=dog&rlz=1C5MACD_enUS1075US1076&oq=dog&aqs=chrome.0.0i271j46i433i512j46i175i199i512j46i131i433i512j0i433i512j46i433i512j0i512j46i131i433i512i650j0i512j0i433i512.428j0j7&sourceid=chrome&ie=UTF-8&safe=active&ssui=on#vhid=MadgLdQ_K-avUM&vssid=l">
+					<Icon name="dog" size={100}/>
+				</a>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum explicabo quisquam quis non, cupiditate possimus! Quaerat corporis voluptatem ipsam, qui, dicta libero, ut aspernatur assumenda vero accusamus nesciunt deserunt omnis.</p>
+		
+	</div>
+</div>
+		<style>
+			[data-icon="resume"]{
+				background-color: red;
+				color:white;
+			}
+
+			[data-icon="programming"]{
+				transition:all 1s;
+			}
+			[data-icon="programming"]:hover{
+				transform:rotate(360deg);
+				
+			}
+
+			[data-icon="design"]{
+				transition:all 1s;
+				background-color: blue;
+				color:white;
+			}[data-icon="design"]:hover{
+				transition:all 1s;
+				background-color: purple;
+				color:white;
+			}
+
+			[data-icon="career"]{
+				background-color: green;
+				color:white;
+			}
+		</style>
+		
+	</body>
+</html>
